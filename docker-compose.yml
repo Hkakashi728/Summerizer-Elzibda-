@@ -7,3 +7,9 @@ services:
       POSTGRES_USER: hkakashi
     ports:
       - "5433:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+
